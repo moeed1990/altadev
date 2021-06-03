@@ -1,0 +1,107 @@
+.about-container{
+    color:black;
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0.3rem;
+    margin: 0.3rem 0rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.about-top{
+    flex-direction: column;
+    width: 100%;
+}
+
+.about-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.about-head{
+    text-align: center;
+    font-size: 1.9rem;
+    width: 100%;
+    margin-top:2rem;
+    margin-bottom: 2rem;
+
+}
+
+
+.about-img{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+    flex-wrap: wrap;
+
+}
+
+.about-img > img{
+    height: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    object-fit: cover;
+    padding-top: 2rem;
+}
+
+
+.about-story{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    justify-content: space-evenly;
+
+
+}
+
+.about-story-heading{
+    color: #e1e8ec;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.about-story-paragraph{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0.3rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.4rem;
+    color: #E1E8EC;
+    justify-content: center;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .about-story-heading {
+      font-size: 1.3rem;
+  }
+  .about-story-paragraph {
+      font-size: 0.8rem;
+  }
+
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .about-bottom {
+    flex-direction: column;
+  }
+    .about-story{
+        width: 100%;
+    }
+}

@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+  }
+  .head-section{
+    height: auto;
+    width: auto;
+  }
+  .body-section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    height: auto;
+    width: auto;
+    background-image: linear-gradient(#99d8dd, #5cb3c1, #01587a);
+
+  }
+  .home,
+  .services,
+  .products,
+  .contact-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+  }
+  
+  .services {
+    color: #0e0e0e;
+    font-size: 3rem;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+  }
+  
+  .products {
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+  
+  .contact-us {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+
+  .side-icons{
+    position: fixed;
+    bottom: 50px;
+    right: 35px;
+    z-index: 999;
+    font-size: 2.5rem;
+  }
+
+  .fa-envelope{
+    color:#E1E8EC;
+  }
+
+  .fa-facebook{
+    color:#E1E8EC;
+  }
+
+
+  .heading-separator{
+    display: block;
+    margin: 0.5em auto;
+    border-style: solid;
+    border-width: 0.5rem 0 0 0;
+    border-color: #f3ba00;
+    font-size: 1em;
+    width:8%;
+  }

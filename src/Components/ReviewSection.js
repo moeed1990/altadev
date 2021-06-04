@@ -11,7 +11,8 @@ function ReviewSection(props) {
         <div className='review-container'>
             <hr className='heading-separator'/>
             <div className="review-title">What other say about us</div>
-                <CarouselProvider
+            <div className='carousel-container'>
+              <CarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={250}
         totalSlides={4}
@@ -50,6 +51,7 @@ function ReviewSection(props) {
         </Slider>
         <DotGroup />
       </CarouselProvider>
+            </div>
         </div>
     );
 }

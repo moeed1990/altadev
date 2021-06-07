@@ -15,14 +15,14 @@ function About(props) {
                 <div className="about-bottom">
                     <div className='about-story'>
                             <div className="about-story-paragraph">
-                                <p>- We believe in intuitive navigation funneling your customers in a direction to be able to connect with you.
-                                </p>
-                                <p>- We provide user-friendly, crisp and clutter free solutions.</p>
-                                <p>- We make sure that you get the best software infrastructure and set of applications to ensure the best experience of your clients.
-                                </p>
-                                <p>
+                                <strong>- We believe in intuitive navigation funneling your customers in a direction to be able to connect with you.
+                                </strong>
+                                <strong>- We provide user-friendly, crisp and clutter free solutions.</strong>
+                                <strong>- We make sure that you get the best software infrastructure and set of applications to ensure the best experience of your clients.
+                                </strong>
+                                <strong>
                                     - So Whether you are handling thousands of payment transactions or you’re just starting out, you are in the right place.
-                                </p>
+                                </strong>
                             </div>
                     </div>
                     <div className="about-img">

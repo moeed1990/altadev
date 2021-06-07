@@ -85,6 +85,7 @@
     line-height: 2rem;
     color: #E1E8EC;
     justify-content: space-evenly;
+    padding: 2.5rem 0rem 2.5rem 1rem;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */

@@ -24,36 +24,33 @@
     flex-wrap: wrap;
     padding: 10px 0px 20px 0px;
     width: 100%;
-    height: 250px;
+    height: auto;
     justify-content:center;
     align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .services-wrap{
+    display: flex;
     width: 33%;
     height: 100%;
-    display: flex;
+    justify-content: center;
     margin: auto;
-    flex-wrap: wrap;
-    align-content:space-evenly;
-    position: relative;
+    align-items: center;
 }
 
-.services-wrap:hover {
-    transform: scale(1.1);
-        color:#f3ba00;
-}
 
 .service-font {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
     text-align:center;
-    align-items: center;
-    align-content: space-evenly;
+    align-content: center;
     font-size: 1.4rem;
     color: #E1E8EC;
-    position: absolute;
-    top: 55%;
+    margin-top: 1rem;
 }
 
 .service-font:hover {
@@ -67,8 +64,6 @@
     font-size: 6rem;
     justify-content: center;
     text-align:center;
-    position: absolute;
-    top: 10%;
 }
 
 .fa-laptop-code:hover {
@@ -83,8 +78,6 @@
     font-size: 6.5rem;
     justify-content: center;
     text-align:center;
-    position: absolute;
-    top: 10%;
 }
 
 .fa-apple:hover {
@@ -98,8 +91,6 @@
     font-size: 6.5rem;
     justify-content: center;
     text-align:center;
-    position: absolute;
-    top: 10%;
 }
 
 .fa-android:hover {
@@ -110,19 +101,19 @@
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {
     .services-wrap{
-        height: 40vh;
+        height: auto;
     }
     .fa-android {
-        font-size: 4.5rem;
+        font-size: 5rem;
     }
     .fa-apple{
-        font-size: 4.5rem;
+        font-size: 5rem;
     }
     .fa-laptop-code{
-        font-size: 4.5rem;
+        font-size: 5rem;
     }
     .service-font {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -131,11 +122,10 @@
   .services-item {
       flex: 100%;
       max-width: 100%;
-      flex-direction: column;
       font-size: 1.4rem;
   }
     .services-wrap{
-        height: 30vh;
+        height: auto;
     }
     .fa-android {
         font-size: 3rem;

@@ -1,0 +1,74 @@
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../Assests/images/Rectangle-7.svg");
+    justify-content: center;
+    align-content: center;
+    padding: 0rem 2rem;
+    height: 50vh;
+    width: 100%;
+    background-position-x: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    margin-top: 10em;
+}
+
+.footer-top{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 350px;
+    width: 100%;
+
+}
+.footer-top-imagewrap{
+    display: flex;
+    height: auto;
+    justify-content: center;
+}
+.footer-top > footer-top-imagewrap > img{
+
+}
+
+.footer-top > h2{
+    display: flex;
+    color: white;
+    text-align: center;
+}
+.button-adjust{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0rem;
+}
+.footer-bottom{
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+
+}
+.footer-links{
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    margin-top: 0.2rem;
+
+
+
+}
+.footer-link-item{
+    color: white;
+    margin-right: 1rem;
+    align-content: center;
+    font-size: medium;
+    font-weight: normal;
+
+}
+
+.footer-bottom > p {
+    text-align: center;
+    font-size: medium;
+    font-weight: normal;
+    color: white;
+}

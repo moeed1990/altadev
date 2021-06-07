@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto'
   }
   .head-section{
     height: auto;
@@ -80,4 +80,6 @@
     border-color: #f3ba00;
     font-size: 1em;
     width:8%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
   }

@@ -39,29 +39,40 @@ function ReviewSection(props) {
 
     useEffect(()=>{
         if(window.innerWidth <= 600){
-            setPageViewNumber('1')
-        }else if (window.innerWidth <=800){
-            setPageViewNumber(2)
+            setPageViewNumber(1)
+        }else if (window.innerWidth <= 800){
+            setPageViewNumber(1)
         }else {
-            setPageViewNumber(3)
+            setPageViewNumber(2)
         }
     },[setPageViewNumber,HandlePageNumber])
 
     window.addEventListener('resize', HandlePageNumber)
     return (
         <>
-            <Swiper slidesPerView={pageViewNumber} spaceBetween={30} pagination={{
-            "clickable": true
-            }} className="mySwiper">
-                {reviewData.map((data,index) => {
-                    return(
-                         <SwiperSlide>
-                            <ReviewCard key={data.id} text={data.reviewText} name={data.user} image={data.image} />
-                         </SwiperSlide>
-                        );
-                })
-                }
-            </Swiper>
+
+            <div className='review-section'>
+                <div className="review-top">
+                    <hr className='heading-separator'/>
+                    <h3 className='review-head'>
+                    What Other are saying about us
+                    </h3>
+                </div>
+                <div className="review-bottom">
+                  <Swiper slidesPerView={pageViewNumber} spaceBetween={80} pagination={{
+                    "clickable": true
+                    }} className="mySwiper">
+                        {reviewData.map((data,index) => {
+                            return(
+                                 <SwiperSlide>
+                                    <ReviewCard key={data.id} text={data.reviewText} name={data.user} image={data.image} />
+                                 </SwiperSlide>
+                                );
+                        })
+                        }
+                   </Swiper>
+                </div>
+            </div>
         </>
     );
 }

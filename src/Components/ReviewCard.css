@@ -1,3 +1,50 @@
 .rcard-container{
-    width: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rcard-quote{
+    width: 40%;
+    padding: 2rem 2rem 0.1rem 0.3rem;
+}
+
+.fa-quote-left{
+    font-size: 2rem;
+    color: #D1D1D1;
+}
+.rcard-text{
+    padding: 0rem 1rem;
+
+}
+
+.user-detail{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 0.1rem solid #CDCDCD;
+    padding: 1rem;
+}
+
+.image-user{
+    display: flex;
+    justify-content: flex-start;
+    width: 50px;
+    height: 50px;
+    border-radius: 4rem;
+    object-fit: contain;
+}
+
+.image-user > img{
+    border-radius: 40px;
+}
+
+.user-detail > h3 {
+    justify-content: center;
+    text-align: center;
+    margin: 0rem 1rem;
 }

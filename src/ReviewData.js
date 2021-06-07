@@ -1,8 +1,8 @@
 export const reviewData = [{
     id: 1,
     user: 'Sunny',
-    image:'',
-    reviewText:'asdasdasdasdas as das dasd as asd asd asd asd asd asd sa',
+    image:'/images/img-2.jpg',
+    reviewText:'asdasdasdasdjasd  j adja sdjka jsa dja  j j sjd jkd askj kjas ksdas as das dasd as asd asd asd asd asd asd sa',
 },{
     id: 2,
     user: 'hunny',

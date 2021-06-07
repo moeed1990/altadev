@@ -5,6 +5,7 @@ import HeroSection from '../Components/HeroSection';
 import Services from "../Components/Services";
 import About from "../Components/About";
 import PreviousWork from "../Components/PreviousWork";
+import Footer from "../Components/Footer";
 import ReviewSection from "../Components/ReviewSection";
 
 function Home(props) {
@@ -30,6 +31,7 @@ function Home(props) {
                 <About />
                 <PreviousWork/>
                 <ReviewSection/>
+                <Footer/>
             </div>
         </>
     );

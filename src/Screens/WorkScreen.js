@@ -10,8 +10,9 @@ function WorkScreen(props) {
         <>
             <div>
             <TopSectionBanner image='images/img-5.jpg' section = 'Work'/>
-        </div>
+            </div>
         <div className='body-section'>
+                <div style={{height:"2rem"}}></div>
                 <div className='side-icons'>
                 <div className='fb-icon'>
                     <Link to='/'>

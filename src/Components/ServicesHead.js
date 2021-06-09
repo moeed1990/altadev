@@ -18,6 +18,7 @@ function ServicesHead(props) {
     return (
         <>
             <div className='head-services-container'>
+                <hr className='heading-separator'/>
                 <div className='head-services'>
                     <div className="head-services-item">
                         <div className="head-services-wrap .head-services-wrap :active" onClick={()=>setTab('webDevelopment')} >

@@ -5,6 +5,7 @@ import Header from "./Components/Header";
 import ServiceScreen from './Screens/ServiceScreen'
 import WorkScreen from "./Screens/WorkScreen";
 import ContactScreen from "./Screens/ContactScreen";
+import AboutScreen from "./Screens/AboutScreen";
 
 function App() {
   return (
@@ -12,9 +13,10 @@ function App() {
           <Header/>
         <Switch>
             <Route path='/' exact component={Home} />
-            <Route path='/services' exact component={ServiceScreen} />
-            <Route path='/work' exact component={WorkScreen} />
-            <Route path='/contact' exact component={ContactScreen} />
+            <Route path='/services' component={ServiceScreen} />
+            <Route path='/about' component={AboutScreen} />
+            <Route path='/work' component={WorkScreen} />
+            <Route path='/contact' component={ContactScreen} />
         </Switch>
       </Router>
   );

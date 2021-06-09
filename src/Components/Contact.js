@@ -28,7 +28,7 @@ function Contact(props) {
                         <img src='/images/img-11.jpg' />
                     </div>
                     <form className="main-form" onSubmit={sendEmail}>
-                        <h2>Send Us a Message</h2>
+                        <h2 style={{color:'#e1e8ec'}}>Send Us a Message</h2>
                  <div className="box-item">
                      <input type="text" placeholder="Name" name="name" />
                  </div>
@@ -41,11 +41,28 @@ function Contact(props) {
                  <div className='box-item'>
                      <textarea name="message" placeholder="Type Your Message Here" />
                  </div>
-                  <input type="submit" value="Send" />
+                  <button className='button-submit' type="submit" value="Send" >DONT press this button limited mails left</button>
              </form>
                 </div>
                 <div className="contact-info">
-                    ala dev in fo
+                    <hr className='heading-separator'/>
+                    <div className="contact-info-bottom">
+                        <div className="contact-info-box">
+                            <h3><i className="far fa-building"></i>   Office Address</h3>
+                            <p>#315, 10357 109 Street,</p>
+                            <p> Edmonton, AB T5J 1N3</p>
+                        </div>
+                        <div className="contact-info-box">
+                            <h3><i className="far fa-clock"></i>    Office Timeing</h3>
+                            <p>#315, 10357 109 Street,</p>
+                            <p> Edmonton, AB T5J 1N3</p>
+                        </div>
+                        <div className="contact-info-box">
+                            <h3><i className="fas fa-phone-volume"></i>    Phone Number</h3>
+                            <p>#315, 10357 109 Street,</p>
+                            <p> Edmonton, AB T5J 1N3</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

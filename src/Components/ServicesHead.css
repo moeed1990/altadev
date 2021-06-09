@@ -5,12 +5,15 @@
     flex-wrap: wrap;
     width: 100%;
     height: auto;
+    margin-top: 2rem;
+
 }
 .head-services{
     display: flex;
     justify-items: center;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 0.5rem;
 
 }
 

@@ -52,3 +52,9 @@
     color: #242424;
     transition: 250ms;
   }
+
+  .btn--large:active, .btn--medium:active, .btn--small:active {
+    background-color: #f3ba00;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}

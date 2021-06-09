@@ -1,20 +1,17 @@
 import React from 'react';
-import '../App.css';
+import TopSectionBanner from "../Components/TopSectionBanner";
 import {Link} from "react-router-dom";
-import HeroSection from '../Components/HeroSection';
-import Services from "../Components/Services";
-import About from "../Components/About";
+import Footer from "../Components/Footer";
 import PreviousWork from "../Components/PreviousWork";
 import ReviewSection from "../Components/ReviewSection";
-import Footer from "../Components/Footer";
 
-function Home(props) {
+function WorkScreen(props) {
     return (
         <>
-            <div className='head-section'>
-                <HeroSection />
-            </div>
-            <div className='body-section'>
+            <div>
+            <TopSectionBanner image='images/img-5.jpg' section = 'Work'/>
+        </div>
+        <div className='body-section'>
                 <div className='side-icons'>
                 <div className='fb-icon'>
                     <Link to='/'>
@@ -27,14 +24,13 @@ function Home(props) {
                     </Link>
                 </div>
             </div>
-                <Services/>
-                <About />
                 <PreviousWork/>
-                <ReviewSection/>
+                <ReviewSection />
                 <Footer/>
             </div>
         </>
+
     );
 }
 
-export default Home;
+export default WorkScreen;

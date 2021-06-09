@@ -46,7 +46,7 @@ function Header(props) {
                     </li>
                     <li className="nav-item">
                         <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
-                            About
+                            About Us
                         </Link>
                     </li>
                     <li className="nav-item">

@@ -53,10 +53,6 @@
     margin-top: 1rem;
 }
 
-.service-font:hover {
-    transform: scale(1.1);
-        color:#f3ba00;
-}
 
 .fa-laptop-code{
     width: 100%;
@@ -97,6 +93,13 @@
     transform: scale(1.1);
         color:#F3BA00;
 }
+
+.service-font:hover {
+    transform: scale(1.1);
+        color:#f3ba00;
+}
+
+
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {

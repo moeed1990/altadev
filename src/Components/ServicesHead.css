@@ -1,0 +1,35 @@
+.head-services-container{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+.head-services{
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.head-services-item{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.head-services-wrap :active{
+    background-color: #5cb3c1;
+
+}
+
+.selected-services{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}

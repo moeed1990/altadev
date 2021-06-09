@@ -8,19 +8,20 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    opacity: 0.9;
+    opacity: 0.4;
   }
 
 .navbar-transparent {
+
   background: transparent;
-    height: 4.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
+  height: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 
 }
 

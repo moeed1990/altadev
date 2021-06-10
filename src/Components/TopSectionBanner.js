@@ -6,6 +6,7 @@ function TopSectionBanner(props) {
         <>
             <div className="top-section-container">
                 <img src={props.image} alt='services'/>
+                <div className="top-section-overlay"></div>
                 <h1>{props.section}</h1>
             </div>
         </>

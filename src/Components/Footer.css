@@ -18,16 +18,30 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    height: 350px;
+    height: 70%;
     width: 100%;
+    margin-top:2rem;
+    margin-bottom: 1.5rem;
 
 }
 .footer-top-imagewrap{
     display: flex;
     height: auto;
+    flex-wrap: wrap;
     justify-content: center;
+    object-fit: cover;
+    justify-items: center;
+    align-items: center;
 }
-.footer-top > footer-top-imagewrap > img{
+.footer-top-imagewrap > img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    height: 200px;
+    width: 200px;
+    margin-left: 20px;
+;
 
 }
 
@@ -70,4 +84,20 @@
     font-size: medium;
     font-weight: normal;
     color: white;
+}
+
+@media (max-width: 800px) {
+
+    .footer-top-imagewrap > img{
+    transform: scale(0.7);
+;
+
+}
+
+    .footer-top > h2{
+    display: flex;
+    color: white;
+    text-align: center;
+        font-size: 1rem;
+}
 }

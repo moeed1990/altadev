@@ -8,9 +8,12 @@ function Header(props) {
     const [click, setClick] = useState(false);
      const [button, setButton] = useState(true);
      const [navBackground, setNavBackground]= useState("none")
+    const [navFontColor, setNavFontColor]= useState("white")
 
     const navRef= React.useRef()
+    const colRef = React.useRef()
     navRef.current = navBackground
+    colRef.current = navFontColor
      const handleClick = () => setClick(!click)
      const closeMobileMenu = () => setClick(false)
 
@@ -26,9 +29,11 @@ function Header(props) {
          const handleScroll = () =>{
          const show = window.scrollY > 150
         if(show){
-            setNavBackground("black")
+            setNavBackground("white")
+            setNavFontColor("Black")
         }else {
             setNavBackground("none")
+            setNavFontColor("White")
         }
     }
     document.addEventListener('scroll',handleScroll)
@@ -44,29 +49,29 @@ function Header(props) {
         <nav className='navbar' style={{background:navBackground}}>
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo" onClick= {closeMobileMenu}>
-                    alta <i className="fab fa-typo3"></i>
+                    <img src ='images/Logo_altaDev.svg' alt='logo'/>
                 </Link>
                 <div className="menu-icon" onClick = {handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
                 <ul className={click ? 'nav-menu active':'nav-menu'}>
                     <li className="nav-item">
-                        <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='/' className='nav-links' style={{color:navFontColor}} onClick={closeMobileMenu}>
                             Home
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='/services' className='nav-links' style={{color:navFontColor}} onClick={closeMobileMenu}>
                             Services
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='/about' className='nav-links' style={{color:navFontColor}} onClick={closeMobileMenu}>
                             About Us
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/work' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='/work' className='nav-links' style={{color:navFontColor}} onClick={closeMobileMenu}>
                             Work
                         </Link>
                     </li>

@@ -3,6 +3,9 @@
   height: 100%;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
 }
 
 .swiper-slide {
@@ -69,10 +72,28 @@ mySwiper{
   height: auto;
   width: 100%;
   overflow: hidden;
-  padding: 2em 5em;
+  padding: 2rem 5rem;
 
 }
 
 .swiper-pagination-bullet{
   background: white;
+}
+
+@media (max-width: 960px) {
+
+  .review-bottom{
+  padding: 2rem 3rem;
+
+}
+
+}
+
+@media (max-width: 460px) {
+
+  .review-bottom{
+  padding: 2rem 2rem;
+
+}
+
 }

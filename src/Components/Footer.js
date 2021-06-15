@@ -9,7 +9,7 @@ function Footer(props) {
         <div className='footer-container'>
             <div className="footer-top">
                 <div className='footer-top-imagewrap'>
-                    <img src='' alt='logo'/>
+                    <img src='images/Logo_altaDev_vert.svg' alt='logo'/>
                 </div>
                 <h2>Just say the magical word and we will do the rest</h2>
                 <div className='button-adjust'>

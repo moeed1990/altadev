@@ -15,6 +15,23 @@ function Home(props) {
                 <HeroSection />
             </div>
             <div className='body-section'>
+                <div className="box">
+                    <div className="square" style={{__i:"0"}}>
+                        <i className="fas fa-code" style={{color:"white", fontSize:"3rem", opacity:"0.3"}}></i>
+                    </div>
+                    <div className="square" style={{__i:"1"}}>
+                        <i className="fas fa-layer-group" style={{color:"white", fontSize:"3rem", opacity:"0.3"}}></i>
+                    </div>
+                    <div className="square" style={{__i:"2"}}>
+                        <i className="fab fa-connectdevelop" style={{color:"white", fontSize:"3rem", opacity:"0.3"}} ></i>
+                    </div>
+                    <div className="square" style={{__i:"3"}}>
+                        <i className="fas fa-laptop-code" style={{color:"white", fontSize:"3rem", opacity:"0.3"}}></i>
+                    </div>
+                    <div className="square" style={{__i:"4"}}>
+                        <i className="far fa-edit" style={{color:"white", fontSize:"3rem", opacity:"0.3"}}></i>
+                    </div>
+                </div>
                 <div className='side-icons'>
                 <div className='fb-icon'>
                     <Link to='/'>

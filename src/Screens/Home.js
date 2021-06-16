@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import '../App.css';
 import {Link} from "react-router-dom";
 import HeroSection from '../Components/HeroSection';
@@ -7,10 +7,26 @@ import About from "../Components/About";
 import PreviousWork from "../Components/PreviousWork";
 import ReviewSection from "../Components/ReviewSection";
 import Footer from "../Components/Footer";
+import {Loader} from "../Components/Loader";
+import Header from "../Components/Header";
+import '../Components/Header.css';
 
 function Home(props) {
+    const [loaded, setLoaded] = useState(false)
+
+
+    useEffect(()=>{
+        setTimeout(()=>{
+            setLoaded(true)
+        },3000)
+
+    },[])
+
     return (
         <>
+        {!loaded ? <Loader/> : (
+            <>
+            <Header/>
             <div className='head-section'>
                 <HeroSection />
             </div>
@@ -50,7 +66,9 @@ function Home(props) {
                 <ReviewSection/>
                 <Footer/>
             </div>
-        </>
+            </>
+            )}
+            </>
     );
 }
 

@@ -1,17 +1,31 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import TopSectionBanner from "../Components/TopSectionBanner";
 import {Link} from "react-router-dom";
 import Footer from "../Components/Footer";
 import PreviousWork from "../Components/PreviousWork";
 import ReviewSection from "../Components/ReviewSection";
+import {Loader} from "../Components/Loader";
+import Header from "../Components/Header";
 
 function WorkScreen(props) {
+    const [loaded, setLoaded] = useState(false)
+
+
+    useEffect(()=>{
+        setTimeout(()=>{
+            setLoaded(true)
+        },2000)
+
+    },[])
     return (
         <>
-            <div>
+            {!loaded ? <Loader/> : (
+                <>
+                    <Header/>
+                    <div>
             <TopSectionBanner image='images/img-5.jpg' section = 'Work'/>
             </div>
-        <div className='body-section'>
+                    <div className='body-section'>
                 <div style={{height:"2rem"}}></div>
                 <div className='side-icons'>
                 <div className='fb-icon'>
@@ -29,6 +43,8 @@ function WorkScreen(props) {
                 <ReviewSection />
                 <Footer/>
             </div>
+                </>
+            )}
         </>
 
     );

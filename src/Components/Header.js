@@ -12,18 +12,22 @@ function Header(props) {
 
     const navRef= React.useRef()
     const colRef = React.useRef()
+    const buttRef = React.useRef()
+
     navRef.current = navBackground
     colRef.current = navFontColor
+    buttRef.current = button
+
      const handleClick = () => setClick(!click)
      const closeMobileMenu = () => setClick(false)
-
-    const showButton = () => {
-         if (window.innerWidth <= 960){
-             setButton(false);
-         } else {
-             setButton(true);
+     const showButton = () => {
+             if (window.innerWidth <= 960){
+                 setButton(false);
+             } else {
+                 setButton(true);
+             }
          }
-     }
+
 
      useEffect(()=> {
          const handleScroll = () =>{
@@ -37,24 +41,25 @@ function Header(props) {
         }
     }
     document.addEventListener('scroll',handleScroll)
+    window.addEventListener('resize', showButton)
          return () =>{
              document.removeEventListener('scroll',handleScroll)
+             window.removeEventListener('resize', showButton)
          }
-         showButton()
+         setButton()
      }, [])
 
-     window.addEventListener('resize', showButton)
     return (
         <>
-        <nav className='navbar' style={{background:navBackground}}>
+        <nav className='navbar w3-animate-top' style={{background:navBackground}}>
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo" onClick= {closeMobileMenu}>
                     <img src ='images/Logo_altaDev.svg' alt='logo'/>
                 </Link>
                 <div className="menu-icon" onClick = {handleClick}>
-                    <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>
+                    <i className={click ? 'fas fa-times' : 'fas fa-bars'} style={{color:navFontColor}}></i>
                 </div>
-                <ul className={click ? 'nav-menu active':'nav-menu'}>
+                <ul className={click ? 'nav-menu active':'nav-menu'} >
                     <li className="nav-item">
                         <Link to='/' className='nav-links' style={{color:navFontColor}} onClick={closeMobileMenu}>
                             Home
@@ -76,11 +81,9 @@ function Header(props) {
                         </Link>
                     </li>
                 </ul>
-
-                {button && <Button buttonStyle='btn--primary' buttonSize='btn--small'> Contact Us </Button>}
+                {button  &&  <Button buttonStyle='btn--primary' buttonSize='btn--small'> Contact Us </Button>}
             </div>
         </nav>
-
         </>
     )
 }

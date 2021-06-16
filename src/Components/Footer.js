@@ -29,7 +29,7 @@ function Footer(props) {
                         Contact
                     </li>
                 </ul>
-                <p>@ altadev.ca</p>
+                <p>@ Altadev.ca</p>
             </div>
         </div>
             </>

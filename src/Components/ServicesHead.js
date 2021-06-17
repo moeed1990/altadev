@@ -32,7 +32,9 @@ function ServicesHead(props) {
                         </div>
                     </div>
                 </div>
+
                 <div className='selected-services'>
+                    <hr className='heading-separator'/>
                     <ServiceDetails title = {tempData.title} text = {tempData.text} image={tempData.image} imageBottom={tempData.imageBottom} />
                 </div>
             </div>

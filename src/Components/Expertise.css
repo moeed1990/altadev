@@ -1,0 +1,49 @@
+.expertise-container{
+
+}
+
+.expertise-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-end;
+
+
+
+
+
+}
+
+.expertise-body > h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+    margin-top:2rem;
+    margin-bottom: 2rem;
+    color: black;
+
+}
+
+.expertise-square {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.1);
+    border-radius: 5px;
+    width: 30%;
+    margin: 0.5rem;
+    font-size: 1.4rem;
+    padding: 1.5rem 0.8rem;
+    color: #E1E8EC;
+
+}

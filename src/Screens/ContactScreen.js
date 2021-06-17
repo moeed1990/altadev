@@ -22,7 +22,7 @@ function ContactScreen(props) {
                 <>
                     <Header/>
                     <div>
-                <TopSectionBanner image='images/img-8.jpg' section='Contact Us'/>
+                <TopSectionBanner image='images/al9.jpeg' section='Contact Us'/>
             </div>
                     <div className='body-section'>
 

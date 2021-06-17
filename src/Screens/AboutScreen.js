@@ -22,7 +22,7 @@ function AboutScreen(props) {
                 <>
                     <Header/>
                     <div>
-                <TopSectionBanner image='images/img-9.jpg' section='About Us'/>
+                <TopSectionBanner image='images/al2.jpg' section='About Us'/>
             </div>
                     <div className='body-section'>
                 <div style={{height:"1.4rem"}}></div>

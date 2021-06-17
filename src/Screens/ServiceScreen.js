@@ -9,6 +9,7 @@ import About from "../Components/About";
 import PreviousWork from "../Components/PreviousWork";
 import ReviewSection from "../Components/ReviewSection";
 import {Loader} from "../Components/Loader";
+import Expertise from "../Components/Expertise";
 
 
 function ServiceScreen(props) {
@@ -27,7 +28,7 @@ function ServiceScreen(props) {
                     (
                         <>
                             <Header/>
-                            <TopSectionBanner image = 'images/img-1.jpg' section='Services'/>
+                            <TopSectionBanner image = 'images/al8.jpeg' section='Services'/>
                             <div className='body-section'>
                                 <div className='side-icons'>
                                     <div className='fb-icon'>
@@ -42,6 +43,7 @@ function ServiceScreen(props) {
                                     </div>
                                 </div>
                                 <ServicesHead />
+                                <Expertise />
                                 <Footer/>
                             </div>
                         </>)}

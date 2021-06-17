@@ -23,7 +23,7 @@ function WorkScreen(props) {
                 <>
                     <Header/>
                     <div>
-            <TopSectionBanner image='images/img-5.jpg' section = 'Work'/>
+            <TopSectionBanner image='images/al3.jpg' section = 'Our Recent Projects'/>
             </div>
                     <div className='body-section'>
                 <div style={{height:"2rem"}}></div>

@@ -33,6 +33,9 @@
 
 .selected-services{
     display: flex;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
+
+

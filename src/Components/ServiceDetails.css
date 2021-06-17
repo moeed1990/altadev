@@ -12,7 +12,8 @@
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 2rem;
-    color:#E1E8EC;
+    margin-top: 2rem;
+    color:black;
 ;
 }
 
@@ -30,12 +31,18 @@
     text-align: justify-all;
     width: 50%;
     color: #E1E8EC;
+    padding-top: 1rem;
+    padding-bottom:1rem ;
 
 }
 .service-detail-textimage{
     width: 50%;
     height: auto;
     object-fit: contain;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
 
 }
 .service-detail-textimage > img {

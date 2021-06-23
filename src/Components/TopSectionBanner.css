@@ -14,7 +14,8 @@
     position: absolute;
     width: 100%;
     text-align: center;
-    color: #e1e8ec;
+    color: #f3ba00;
+    font-weight: bold;
 }
 
 .top-section-container > img {
@@ -30,6 +31,6 @@
     position:absolute;
     width: 100%;
     height: 100%;
-    background-color: black;
-    opacity: 0.6;
+    background-color: #5cb3c1;
+    opacity: 0.4;
 }

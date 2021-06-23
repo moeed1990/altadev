@@ -89,9 +89,9 @@
   .box .square {
     position: absolute;
     display: flex;
-      justify-content: center;
-      justify-items: center;
-      align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
     backdrop-filter: blur(5px);
     box-shadow: 0 25px 45px rgba(0,0,0,0.1);
     border: 1px solid rgba(255,255,255,0.5);
@@ -157,4 +157,12 @@
     height: 90px;
     z-index:0;
     --i:4;
+}
+
+@media only screen and (max-width: 780px) {
+.box{
+    display: none;
+}
+
+
 }

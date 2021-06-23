@@ -19,8 +19,8 @@ function Home(props) {
         setTimeout(()=>{
             setLoaded(true)
         },3000)
-
     },[])
+
 
     return (
         <>

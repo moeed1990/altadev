@@ -56,6 +56,13 @@
     padding: 1rem;
 
 }
+.card-overlay > h4{
+    text-align: center;
+    margin: 0rem;
+    padding-bottom: 1rem;
+    bottom: 50%;
+    position: relative;
+}
 
 .card-button{
     position: absolute;

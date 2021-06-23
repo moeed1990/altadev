@@ -16,17 +16,17 @@ function Services(props) {
             <div className="services-item">
                 <div className="services-wrap">
                     <Link to='/services'>
-                        <i className="fas fa-laptop-code"><strong className='service-font'>Web Development</strong></i>
+                        <i className="fas fa-palette"><strong className='service-font'>Web Designing</strong></i>
                     </Link>
                 </div>
                 <div className="services-wrap">
                     <Link to='/services'>
-                        <i className="fab fa-apple"><strong className='service-font'>iOS App Development</strong></i>
+                         <i className="fas fa-laptop-code"><strong className='service-font'>Web Development</strong></i>
                     </Link>
                 </div>
                 <div className="services-wrap">
-                    <Link to={'/service/'}>
-                        <i className="fab fa-android"><strong className='service-font'>Android Development</strong></i>
+                    <Link to={'/services/'}>
+                        <i className="fab fa-apple"><strong className='service-font'>App Development</strong></i>
                     </Link>
                 </div>
             </div>

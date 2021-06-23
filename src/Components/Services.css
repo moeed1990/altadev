@@ -81,15 +81,15 @@
         color:#F3BA00;
 }
 
-.fa-android{
+.fa-palette{
     width: 100%;
     color: #E1E8EC;
-    font-size: 6.5rem;
+    font-size: 5rem;
     justify-content: center;
     text-align:center;
 }
 
-.fa-android:hover {
+.fa-palette:hover {
     transform: scale(1.1);
         color:#F3BA00;
 }
@@ -130,7 +130,7 @@
     .services-wrap{
         height: auto;
     }
-    .fa-android {
+    .fa-palette  {
         font-size: 3rem;
     }
     .fa-apple{

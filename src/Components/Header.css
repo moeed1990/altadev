@@ -8,6 +8,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
+    border-bottom: 1px solid #e1e8ec;
   }
 .w3-animate-top{
   animation-delay: 0s;
@@ -98,6 +99,34 @@
   .menu-icon {
     display: none;
   }
+
+  li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
   @media screen and (max-width: 960px) {
     .NavbarItems {

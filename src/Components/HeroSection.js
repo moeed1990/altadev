@@ -9,7 +9,8 @@ function HeroSection() {
             <h1 className='w3-animate-left'>Come start your business with us</h1>
             <p className='w3-animate-right'>What are you waiting for</p>
             <div className="hero-btns">
-                <Button 
+                <Button
+                    address='/services'
                 className='btns'
                 buttonStyle= 'btn--outline'
                 buttonSize= 'btn--large'

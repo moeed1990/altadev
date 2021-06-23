@@ -8,19 +8,9 @@ import {Loader} from "../Components/Loader";
 import Header from "../Components/Header";
 
 function WorkScreen(props) {
-    const [loaded, setLoaded] = useState(false)
 
-
-    useEffect(()=>{
-        setTimeout(()=>{
-            setLoaded(true)
-        },2000)
-
-    },[])
     return (
         <>
-            {!loaded ? <Loader/> : (
-                <>
                     <Header/>
                     <div>
             <TopSectionBanner image='images/al3.jpg' section = 'Our Recent Projects'/>
@@ -43,8 +33,6 @@ function WorkScreen(props) {
                 <ReviewSection />
                 <Footer/>
             </div>
-                </>
-            )}
         </>
 
     );

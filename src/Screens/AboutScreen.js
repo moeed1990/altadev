@@ -7,22 +7,12 @@ import {Loader} from "../Components/Loader";
 import Header from "../Components/Header";
 
 function AboutScreen(props) {
-    const [loaded, setLoaded] = useState(false)
 
-
-    useEffect(()=>{
-        setTimeout(()=>{
-            setLoaded(true)
-        },3000)
-
-    },[])
     return (
         <>
-            {!loaded ? <Loader/> : (
-                <>
-                    <Header/>
+            <Header/>
                     <div>
-                <TopSectionBanner image='images/al2.jpg' section='About Us'/>
+                <TopSectionBanner image='images/al2.jpg' section='Discover Our Story'/>
             </div>
                     <div className='body-section'>
                 <div style={{height:"1.4rem"}}></div>
@@ -30,8 +20,6 @@ function AboutScreen(props) {
                 <ReviewSection/>
                 <Footer/>
             </div>
-                </>
-            )}
         </>
     );
 }

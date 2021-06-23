@@ -1,32 +1,14 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import TopSectionBanner from "../Components/TopSectionBanner";
-import Services from "../Components/Services";
 import ServicesHead from "../Components/ServicesHead";
 import {Link} from "react-router-dom";
-import About from "../Components/About";
-import PreviousWork from "../Components/PreviousWork";
-import ReviewSection from "../Components/ReviewSection";
-import {Loader} from "../Components/Loader";
-import Expertise from "../Components/Expertise";
 
 
 function ServiceScreen(props) {
-    const [loaded, setLoaded] = useState(false)
-
-
-    useEffect(()=>{
-        setTimeout(()=>{
-            setLoaded(true)
-        },3000)
-
-    },[])
     return (
             <>
-                {!loaded ? <Loader/> :
-                    (
-                        <>
                             <Header/>
                             <TopSectionBanner image = 'images/al8.jpeg' section='Services'/>
                             <div className='body-section'>
@@ -43,10 +25,8 @@ function ServiceScreen(props) {
                                     </div>
                                 </div>
                                 <ServicesHead />
-                                <Expertise />
                                 <Footer/>
                             </div>
-                        </>)}
             </>
         );
 }

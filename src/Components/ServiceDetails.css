@@ -27,12 +27,11 @@
 }
 .service-detail-text{
     font-weight: normal;
-    font-size: 1.4rem;
-    text-align: justify-all;
+    font-size: 1.1rem;
+    text-align: justify;
     width: 50%;
     color: #E1E8EC;
-    padding-top: 1rem;
-    padding-bottom:1rem ;
+    padding: 2rem 1rem;
 
 }
 .service-detail-textimage{
@@ -60,4 +59,34 @@
 .service-detail-image > img {
     width: 100%;
     height: auto;
+}
+
+@media screen and (max-width : 1000px)
+{
+    .service-detail-text{
+        font-size: 1rem;
+}
+
+}
+
+@media screen and (max-width : 900px)
+{
+    .service-detail-text{
+        font-size: 0.9rem;
+}
+
+}
+
+@media screen and (max-width : 700px)
+{
+    .service-detail-text{
+
+        font-size: 0.9rem;
+        width: 100%;
+    }
+    .service-detail-textimage{
+    display: none;
+
+}
+
 }

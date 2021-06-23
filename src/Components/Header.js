@@ -5,22 +5,24 @@ import { Button } from './Button';
 
 
 function Header(props) {
+
     const [click, setClick] = useState(false);
-     const [button, setButton] = useState(true);
-     const [navBackground, setNavBackground]= useState("none")
+    const [button, setButton] = useState(true);
+    const [navBackground, setNavBackground]= useState("none")
     const [navFontColor, setNavFontColor]= useState("white")
 
+    const buttRef = React.useRef()
     const navRef= React.useRef()
     const colRef = React.useRef()
-    const buttRef = React.useRef()
 
+    buttRef.current = button
     navRef.current = navBackground
     colRef.current = navFontColor
-    buttRef.current = button
 
      const handleClick = () => setClick(!click)
      const closeMobileMenu = () => setClick(false)
-     const showButton = () => {
+
+    const showButton = () => {
              if (window.innerWidth <= 960){
                  setButton(false);
              } else {
@@ -29,32 +31,32 @@ function Header(props) {
          }
 
 
-     useEffect(()=> {
-         const handleScroll = () =>{
-         const show = window.scrollY > 150
+    useEffect(()=> {
+        const handleScroll = () =>{
+        const show = window.scrollY > 150
         if(show){
             setNavBackground("white")
             setNavFontColor("Black")
-        }else {
+        } else {
             setNavBackground("none")
             setNavFontColor("White")
-        }
-    }
-    document.addEventListener('scroll',handleScroll)
-    window.addEventListener('resize', showButton)
-         return () =>{
-             document.removeEventListener('scroll',handleScroll)
-             window.removeEventListener('resize', showButton)
+            }
          }
-         setButton()
+        document.addEventListener('scroll',handleScroll)
+        showButton()
+             return () =>{
+                 document.removeEventListener('scroll',handleScroll)
+             }
      }, [])
+
+    window.addEventListener('resize', showButton)
 
     return (
         <>
         <nav className='navbar w3-animate-top' style={{background:navBackground}}>
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo" onClick= {closeMobileMenu}>
-                    <img src ='images/Logo_altaDev.svg' alt='logo'/>
+                    <img src ='/images/Logo_altaDev.svg' alt='logo'/>
                 </Link>
                 <div className="menu-icon" onClick = {handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'} style={{color:navFontColor}}></i>
@@ -81,7 +83,7 @@ function Header(props) {
                         </Link>
                     </li>
                 </ul>
-                {button  &&  <Button buttonStyle='btn--primary' buttonSize='btn--small'> Contact Us </Button>}
+                {button  &&  <Button address='/contact' buttonStyle='btn--primary' buttonSize='btn--small'> Contact Us </Button>}
             </div>
         </nav>
         </>

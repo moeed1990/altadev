@@ -7,20 +7,10 @@ import {Loader} from "../Components/Loader";
 import Header from "../Components/Header";
 
 function ContactScreen(props) {
-    const [loaded, setLoaded] = useState(false)
 
-
-    useEffect(()=>{
-        setTimeout(()=>{
-            setLoaded(true)
-        },3000)
-
-    },[])
     return (
         <>
-            {!loaded ? <Loader/> : (
-                <>
-                    <Header/>
+            <Header/>
                     <div>
                 <TopSectionBanner image='images/al9.jpeg' section='Contact Us'/>
             </div>
@@ -30,8 +20,6 @@ function ContactScreen(props) {
                 <Footer/>
             </div>
                 </>
-            )}
-        </>
     );
 }
 

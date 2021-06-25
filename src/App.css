@@ -40,15 +40,7 @@
     box-sizing: border-box;
     margin-bottom: 1rem;
   }
-  
-  .products {
-    background-position: center;
-    background-size: fill;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-  }
-  
+
   .contact-us {
     background-position: center;
     background-size: cover;
@@ -66,11 +58,11 @@
   }
 
   .fa-envelope{
-    color:#E1E8EC;
+    color: #f3ba00;
   }
 
   .fa-facebook{
-    color:#E1E8EC;
+    color:#f3ba00;
   }
 
 
@@ -83,7 +75,6 @@
     font-size: 1em;
     width:10%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
   }
 
   .box .square {

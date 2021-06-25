@@ -18,7 +18,7 @@ function Home(props) {
     useEffect(()=>{
         setTimeout(()=>{
             setLoaded(true)
-        },3000)
+        },2000)
     },[])
 
 
@@ -55,7 +55,7 @@ function Home(props) {
                     </Link>
                 </div>
                 <div className='mail-icon'>
-                    <Link to='/'>
+                    <Link to='/contact'>
                         <i className="fas fa-envelope" ></i>
                     </Link>
                 </div>

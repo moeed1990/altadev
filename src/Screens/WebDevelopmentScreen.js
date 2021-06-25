@@ -22,7 +22,7 @@ function WebDevelopmentScreen(props) {
                                         </Link>
                                     </div>
                                     <div className='mail-icon'>
-                                        <Link to='/'>
+                                        <Link to='/contact'>
                                             <i className="fas fa-envelope" ></i>
                                         </Link>
                                     </div>

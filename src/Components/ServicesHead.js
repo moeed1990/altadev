@@ -15,7 +15,7 @@ function ServicesHead(props) {
                     <ServiceDisplay/>
                 </div>
                 <div className="service-banner">
-                    With Altadev.ca you are all set to launch your new website.
+                    With Altadev.ca you are all set to launch your new Project.
                     <p>Are you ready for that?</p>
                 </div>
             </div>

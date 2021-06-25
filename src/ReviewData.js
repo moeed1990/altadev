@@ -1,21 +1,26 @@
 export const reviewData = [{
     id: 1,
-    user: 'Sunny',
-    image:'/images/img-2.jpg',
-    reviewText:'asdasdasdasdjasd  j adja sdjka jsa dja  j j sjd jkd askj kjas ksdas as das dasd as asd asd asd asd asd asd sa',
+    user: 'jf061089',
+    image:'/images/jf061089.jpg',
+    reviewText:"it's amazing! We are really impressed how you managed that in the short time. Even with templates it's a lot of work and everything in corporate design. It's perfect and even better than what we imagined. If we need something again, we will buy again and give a generous tip. Thank you!",
 },{
     id: 2,
-    user: 'hunny',
-    image:'',
-    reviewText:'asdasdasdasdas as das dasd as asd asd asd asd asd asd sa',
+    user: 'Ucheymichaels',
+    image:'/images/Ucheymichaels.jpg',
+    reviewText:'He took the idea and gave it wings. pleasure to work with and very respectful.',
 },{
     id: 3,
-    user: 'jawad',
-    image:'',
-    reviewText:'asdasdasdasdas as das dasd as asd asd asd asd asd asd sa',
+    user: 'muhaarib',
+    image:'/images/muhaarib.jpg',
+    reviewText:'Outstanding experience. Very fast. Very professional. Excellent product.',
 },{
     id: 4,
-    user: 'saba',
-    image:'',
-    reviewText:'asdasdasdasdas as das dasd as asd asd asd asd asd asd sa',
+    user: 'naftalieh',
+    image:'/images/naftalieh.jpeg',
+    reviewText:'Great Developer, understanding, very willing to help. Smart guy. I give my recommendation.',
+} ,{
+    id: 5,
+    user: 'reecedickson',
+    image:'/images/reecedickson.jpg',
+    reviewText:'High quality work. Very well done.',
 }]

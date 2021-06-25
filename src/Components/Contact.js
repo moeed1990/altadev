@@ -25,7 +25,7 @@ function Contact(props) {
              </div>
                 <div className="form-art-container">
                     <div className="form-side-image">
-                        <img src='/images/img-11.jpg' />
+                        <img src='/images/contactus.svg' />
                     </div>
                     <form className="main-form" onSubmit={sendEmail}>
                         <h2 style={{color:'#e1e8ec'}}>Send Us a Message</h2>

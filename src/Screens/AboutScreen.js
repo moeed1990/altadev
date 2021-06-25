@@ -16,7 +16,7 @@ function AboutScreen(props) {
             </div>
                     <div className='body-section'>
                 <div style={{height:"1.4rem"}}></div>
-                <About/>
+                <About address='/images/aboutus_side.svg'/>
                 <ReviewSection/>
                 <Footer/>
             </div>

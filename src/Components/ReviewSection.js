@@ -24,12 +24,12 @@ function ReviewSection(props) {
     const [pageViewNumber, setPageViewNumber] = useState(3)
 
     const HandlePageNumber = () => {
-        if (window.innerWidth <=800){
+        if (window.innerWidth <=1000){
         setMobileViewEight(  true)
     } else{
             setMobileViewEight(  false)
         }
-        if (window.innerWidth <= 600) {
+        if (window.innerWidth <= 700) {
         setMobileViewSix(true)
         }else {
             setMobileViewSix(false)
@@ -38,12 +38,12 @@ function ReviewSection(props) {
 
 
     useEffect(()=>{
-        if(window.innerWidth <= 600){
+        if(window.innerWidth <= 700){
             setPageViewNumber(1)
-        }else if (window.innerWidth <= 800){
-            setPageViewNumber(1)
-        }else {
+        }else if (window.innerWidth <= 1000){
             setPageViewNumber(2)
+        }else {
+            setPageViewNumber(3)
         }
     },[setPageViewNumber,HandlePageNumber])
 

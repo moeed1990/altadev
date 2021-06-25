@@ -11,11 +11,11 @@ function ServiceDetails(props) {
                 <div className="service-detail-text">
                     {props.text}
                     <ul style={{color:"#E1E8EC", padding:"1.5rem"}}>
-                            <li>{props.point1}</li>
-                            <li>{props.point2}</li>
-                            <li>{props.point3}</li>
-                            <li>{props.point4}</li>
-                            <li>{props.point5}</li>
+                            <li>Intuitive, elegant approaches focused on user experience</li>
+                            <li>Knowing whether your concept can work technically can save you heartache and money.</li>
+                            <li>You deserve the best.Your product deserves nothing less.</li>
+                            <li>Any product can launch.Successful products evolve.</li>
+                            <li>Thoughtful and comprehensive product strategy is critical to the success of your product.</li>
                     </ul>
                 </div>
                 <div className="service-detail-textimage">

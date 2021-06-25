@@ -32,3 +32,17 @@
 
 
 }
+
+@media screen and (max-width : 760px) {
+.service-display-cards{
+    flex-direction: column;
+}
+ .service-display-card{
+    flex-direction: column;
+     width: 100%;
+     margin-top: 2rem;
+     margin-right: 0rem;
+     margin-left: 0rem;
+}
+
+}

@@ -32,7 +32,10 @@ function AppdevScreen(props) {
                                     <ServiceDetails id= {tempData.id} title = {tempData.title} text = {tempData.text} image={tempData.image} imageBottom={tempData.imageBottom} />
                                 </div>
                                 <Expertise />
-
+                                <div className="service-banner">
+                                    With Altadev.ca you are all set with your App development tools. Are you ready for that?
+                                    <p>please click start your project and send us a Query!!</p>
+                                </div>
                                 <Footer/>
                             </div>
         </div>

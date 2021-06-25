@@ -23,7 +23,8 @@ function PreviousWork(props) {
                             <h4>{d.title}</h4>
                         </div>
                         <div className="card-button">
-                            <Button buttonSize='btn--small'>Live Demo</Button>
+                            <button className='button-link'>
+                                <a href={d.liveDemoLink} style={{textDecoration:"none"}} target="_blank">Live Demo</a></button>
                         </div>
                         </div>
                     </div>

@@ -61,7 +61,7 @@ function Home(props) {
                 </div>
             </div>
                 <Services/>
-                <About />
+                <About address='images/aboutus_side_1.svg' />
                 <PreviousWork/>
                 <ReviewSection/>
                 <Footer/>

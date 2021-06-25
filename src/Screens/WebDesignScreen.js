@@ -14,7 +14,7 @@ function WebDesignScreen({props}) {
     return (
         <div>
             <Header/>
-            <TopSectionBanner image = '/images/al8.jpeg' section='Web Development'/>
+            <TopSectionBanner image = '/images/al8.jpeg' section='Designing of WebApp and Mobile App'/>
             <div className='body-section'>
                                 <div className='side-icons'>
                                     <div className='fb-icon'>
@@ -34,11 +34,6 @@ function WebDesignScreen({props}) {
                                         id= {tempData.id}
                                         title = {tempData.title}
                                         text = {tempData.text}
-                                        point1={tempData.pointa}
-                                        point2={tempData.pointb}
-                                        point3={tempData.pointc}
-                                        point4={tempData.pointd}
-                                        point5={tempData.pointe}
                                         image={tempData.image}
                                         imageBottom={tempData.imageBottom} />
                                 </div>

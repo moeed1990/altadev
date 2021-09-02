@@ -1,6 +1,6 @@
 export const reviewData = [{
     id: 1,
-    user: 'jf061089',
+    user: 'jeff',
     image:'/images/jf061089.jpg',
     reviewText:"it's amazing! We are really impressed how you managed that in the short time. Even with templates it's a lot of work and everything in corporate design. It's perfect and even better than what we imagined. If we need something again, we will buy again and give a generous tip. Thank you!",
 },{

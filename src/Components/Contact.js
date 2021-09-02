@@ -30,18 +30,18 @@ function Contact(props) {
                     <form className="main-form" onSubmit={sendEmail}>
                         <h2 style={{color:'#e1e8ec'}}>Send Us a Message</h2>
                  <div className="box-item">
-                     <input type="text" placeholder="Name" name="name" />
+                     <input type="text" placeholder="Name" name="name" required/>
                  </div>
                  <div className="box-item">
-                     <input type="email" placeholder="Email" name="email" />
+                     <input type="email" placeholder="Email" name="email" required/>
                  </div>
                  <div className="box-item">
                      <input type="text" placeholder="Phone No." name="phone" />
                  </div>
                  <div className='box-item'>
-                     <textarea name="message" placeholder="Type Your Message Here" />
+                     <textarea name="message" placeholder="Type Your Message Here" required/>
                  </div>
-                  <button className='button-submit' type="submit" value="Send" >DONT press this button limited mails left</button>
+                  <button className='button-submit' type="submit" value="Send" >Send Us a Query</button>
              </form>
                 </div>
                 <div className="contact-info">

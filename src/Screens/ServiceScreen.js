@@ -10,7 +10,7 @@ function ServiceScreen(props) {
     return (
             <>
                             <Header/>
-                            <TopSectionBanner image = 'images/al8.jpeg' section='Services'/>
+                            <TopSectionBanner image = 'images/al8.jpeg' section='Checkout Our Services'/>
                             <div className='body-section'>
                                 <div className='side-icons'>
                                     <div className='fb-icon'>

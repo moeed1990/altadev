@@ -10,7 +10,7 @@ function ServiceDetails(props) {
             <div className="service-detail-body">
                 <div className="service-detail-text">
                     {props.text}
-                    <ul style={{color:"#E1E8EC", padding:"1.5rem"}}>
+                    <ul style={{padding:"1.5rem"}}>
                             <li>Intuitive, elegant approaches focused on user experience</li>
                             <li>Knowing whether your concept can work technically can save you heartache and money.</li>
                             <li>You deserve the best.Your product deserves nothing less.</li>

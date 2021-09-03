@@ -30,7 +30,7 @@ export const serviceData = [
             "WE KNOW THAT CUSTOM WEB DESIGNS CAN ATTRACT YOUR POTENTIAL CUSTOMERS -GET SOMETHING EXTRAORDINARY WITH OUR WEB DESIGN SERVICES!\n" +
             "It’s not easy to design the highly responsive designs that would be attracting the eyes of the people. It takes a lot of effort along the proper planning. We consider planning to be the core element in designing; as we need to customize the designs and craft the aesthetically impressive designs that would lock the success for you.\n" +
             "\n" +
-            "With the AltaDev get the cheap website designs that are SEO friendly\n" +
+            "With the AltaDev get the cheap website designs that are SEO friendly.\n" +
             "\n" +
             "At AltaDev, we design and create the websites for you that perform well in the SEO context and help you to climb the desired position of the search engines so that you would be able to increase the traffic to your website.",
         pointa:"Intuitive, elegant approaches focused on user experience",
